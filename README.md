@@ -1,23 +1,23 @@
-# React Express Starter Pack
+# Test práctico mercadolibre
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
+> Aplicación creada a partir del starter pack de https://github.com/bradtraversy/react_express_starter. 
 
-## Quick Start
+## Inicio rápido
 
 ``` bash
-# Install dependencies for server
+# Instalar dependencias para el servidor
 npm install
 
-# Install dependencies for client
+# Instalar dependencias para el cliente
 npm run client-install
 
-# Run the client & server with concurrently
+# Correr cliente y servidor al mismo tiempo
 npm run dev
 
-# Run the Express server only
+# Correr sólo el servidor express
 npm run server
 
-# Run the React client only
+# Correr solo el cliente react
 npm run client
 
-# Server runs on http://localhost:5000 and client on http://localhost:3000
+# El servidor corre en http://localhost:5000 y el cliente en http://localhost:3000
