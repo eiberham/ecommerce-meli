@@ -1,7 +1,7 @@
 import React from 'react';
 
-const renderElements = (elements) => {
-    if(!elements){
+const renderElements = (elements, hide) => {
+    if(!elements || hide){
         return <li></li>
     }
 
@@ -14,12 +14,12 @@ const renderElements = (elements) => {
     })
 }
 
-const Breadcrumb = (props) => {
+const Breadcrumb = ({elements, hide}) => {
     return (
         <div className="breadcrumb-box">
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb pl-0">
-                    {renderElements(props.elements)}
+                    {renderElements(elements, hide)}
                 </ol>
             </nav>
         </div>

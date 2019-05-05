@@ -55,21 +55,23 @@ class ProductList extends React.Component {
 
     renderProducts(){
 
-        const { products } = this.state;
+        const { products, error } = this.state;
         if(!products){
             return <div></div>
         }
 
-        return products.map( product => {
-            return <ProductItem key={product.id} product={product} onProductSelect={() => this.onProductSelect(product)}/>
-        })
+        if(!error){
+            return products.map( product => {
+                return <ProductItem key={product.id} product={product} onProductSelect={() => this.onProductSelect(product)}/>
+            })
+        }
     }
 
     render(){
         return (
             <div className="container d-flex flex-column">
                 <NotFound show={this.state.error}/>
-                <Breadcrumb elements={this.state.categories}/>
+                <Breadcrumb elements={this.state.categories} hide={this.state.error}/>
                 <div className="flex-grow-1">
                     {this.renderProducts()}
                 </div>
