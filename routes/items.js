@@ -1,11 +1,10 @@
 const express = require('express');
+const redis = require('redis');
+const client = redis.createClient();
 const router = express.Router();
 const axios = require('axios');
 const meli = require('../apis/meli');
 const _ = require('lodash');
-
-const redis = require('redis');
-const client = redis.createClient();
 
 router.get('/', (req, res) => {
 

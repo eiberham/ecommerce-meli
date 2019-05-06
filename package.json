@@ -6,7 +6,7 @@
   "scripts": {
     "client-install": "cd client && npm install",
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "pm2 start server.js -i 0 --watch",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -21,6 +21,7 @@
     "express": "^4.16.2",
     "express-prettify": "^0.1.1",
     "lodash": "^4.17.11",
+    "pm2": "^3.5.0",
     "redis": "^2.8.0"
   }
 }
