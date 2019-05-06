@@ -6,7 +6,7 @@
   "scripts": {
     "client-install": "cd client && npm install",
     "start": "node server.js",
-    "server": "pm2 start server.js -i 0 --watch",
+    "server": "pm2 start server.js -i 0 -l logs/server.log",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
