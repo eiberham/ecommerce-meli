@@ -4,6 +4,10 @@ This is a module that leveraging the mercadolibre's api allows you to search pro
 
 It has a backend designed with express.js whose responsibility is to reach the mercadolibre's api and return what we want, to enhance the overall performance it does caching with redis and clustering via pm2 module.
 
+<p align="center">
+  <img src="ecommerce.png" />
+</p>
+
 ## Quick start
 
 ``` bash
