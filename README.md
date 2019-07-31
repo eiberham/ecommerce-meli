@@ -1,23 +1,31 @@
-# Test práctico mercadolibre
+# E-commerce
 
-> Aplicación creada a partir del starter pack de https://github.com/bradtraversy/react_express_starter. 
+This is a module that leveraging the mercadolibre's api allows you to search products currently on sale in the platform and get relevant information from them like description, price, among others.
 
-## Inicio rápido
+It has a backend designed with express.js whose responsibility is to reach the mercadolibre's api and return what we want, to enhance the overall performance it does caching with redis and clustering via pm2 module.
+
+## Quick start
 
 ``` bash
-# Instalar dependencias para el servidor
+# Clone the repository
+git clone https://github.com/wwleak/ecommerce-meli.git
+
+# Install dependencies for the server
 npm install
 
-# Instalar dependencias para el cliente
+# Install dependencies for the client
 npm run client-install
 
-# Correr cliente y servidor al mismo tiempo
+# Run client and server 
 npm run dev
 
-# Correr sólo el servidor express
+# Run express server only
 npm run server
 
-# Correr solo el cliente react
+# Run react client only
 npm run client
+```
 
-# El servidor corre en http://localhost:5000 y el cliente en http://localhost:3000
+## Notice
+
+Server runs at localhost on port 5000 and the client on port 3000. If you want it to run in another port change it manually.
