@@ -13,19 +13,19 @@ git clone https://github.com/wwleak/ecommerce-meli.git
 # Install dependencies for the server
 npm install
 
-# Instalar dependencies for the client
+# Install dependencies for the client
 npm run client-install
 
 # Run client and server 
 npm run dev
 
-# Correr sólo el servidor express
+# Run express server only
 npm run server
 
-# Correr solo el cliente react
+# Run react client only
 npm run client
 ```
 
 ## Notice
 
-Server runs at http://localhost:5000 and the client at http://localhost:3000. If you want it to run in another port change it manually.
+Server runs at localhost on port 5000 and the client on port 3000. If you want it to run in another port change it manually.
